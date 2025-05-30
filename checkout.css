@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#checkout-page {
+    /* padding: 20px 0; */
+    position: sticky;
+    top: 0px;
+}
+
+/* Sticky Navbar */
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Order Summary Styles */
+.order-summary-box {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary-box .order-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.order-summary-box .fw-bold {
+    font-size: 18px;
+}
+
+/* Shipping Details Styles */
+form .form-label {
+    font-weight: bold;
+}
+
+form .form-control {
+    border-radius: 5px;
+}
+
+/* Payment Options Styles */
+.payment-options .form-check {
+    margin-bottom: 10px;
+}
+
+.payment-options .form-check-label {
+    font-size: 16px;
+}
+
+/* Confirm Button Styles */
+button.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}

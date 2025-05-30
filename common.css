@@ -1,0 +1,83 @@
+:root{
+    --blue-grey: #ecf0f1;
+    --pale-blue:#2c3e50;
+    --mid-grey:#999;
+    --jean-blue:#3b5875;
+    --light-blue:#95afc0;
+    --sky-blue: #dff9fb;
+    --dark-sky-blue:#c7ecee;
+    --light-grey:#ccc;
+}
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+#header{
+    background-color: var(--blue-grey);
+    padding: 1.25rem 0;
+}
+#header .header-wrapper .logo{
+    font-size: 1.35rem;
+    line-height: 1.5;
+}
+
+#header .header-wrapper .logo a{
+    color: black;
+    letter-spacing: 5px;
+
+}
+
+#header .header-wrapper .user-action{
+    line-height: 1.5;
+    font-size: 1rem;
+    gap: 1rem;
+}
+#header .header-wrapper .logout-btn{
+    cursor: pointer;
+    margin-left: 1.25rem;
+}
+#header .header-wrapper .user-action a{
+    color: black;
+    text-decoration: none;
+}
+
+#header .header-wrapper .user-action a:hover{
+    text-decoration: underline;
+}
+
+.loader-backdrop{
+    position: absolute; 
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:5rem;
+}
+.loader2 > div{
+    border: 5px solid red;
+    width: 4rem;
+    height: 4rem;
+    border-top: 5px solid #f0eeeb;
+    border-bottom: 5px solid #f0eeeb;
+    border-radius: 50%;
+    animation: spinner2 2s linear infinite;
+}
+
+@keyframes spinner2 {
+    from{
+        transform:rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
